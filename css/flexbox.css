@@ -1,0 +1,124 @@
+.cabecalhoPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+  display: flex;
+}
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-of-type(4n + 1) {
+  margin-left: 0;
+}
+
+.videoSobre .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoSobre-sobre {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.videoSobre button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-navMap-list > div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalhoPrincipal-nav {
+    flex-direction: column;
+  }
+
+  .cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .conteudoPrincipal-cursos {
+    flex-direction: column wrap;
+  }
+
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-of-type(4n) {
+    margin-right: 1%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-of-type(4n + 1) {
+    margin-left: 1%;
+  }
+
+  .rodapePrincipal-navMap-list {
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    gap: 16px;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cabecalhoPrincipal-nav-link-app {
+    order: -1;
+  }
+}
